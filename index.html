@@ -171,7 +171,7 @@
         </div>
         <div class="cat-submenu hidden" id="catPBI">
           <button class="sub-btn" onclick="window.open('https://youtu.be/_7Ncd7Lcnv8','_blank')"><i class="fa-solid fa-play"></i>Projeto 1 —Healthcare Dashboard ⭐</button>
-          <button class="sub-btn" onclick="window.open('https://marcosfeitosa0408.github.io/logistics-operations-dashboard/','_blank')"><i class="fa-solid fa-truck"></i>Projeto 2 — Dashboard Logística</button>
+          <button class="sub-btn" onclick="window.open('https://marcosfeitosa0408.github.io/logistics-operations-dashboard/','_blank')"><i class="fa-solid fa-truck"></i><button class="sub-btn" onclick="abrirModal()"><i class="fa-solid fa-truck"></i>Projeto 2 — Dashboard Logística</button></button>
           <button class="sub-btn" onclick="window.open('https://youtu.be/E64vsx13HKA','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 3 — Dashboard Vol.1</button>
           <button class="sub-btn" onclick="window.open('https://youtu.be/nf25G0AyGhs','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 4 — Dashboard Vol.2</button>
         </div>
@@ -266,7 +266,39 @@
   </div>
   <p class="footer-copy">© 2025 <span>Marcos Feitosa</span> · Analista de Dados · Feito com 💙 e muito café</p>
 </footer>
-
+<!-- MODAL LOGÍSTICA -->
+<div id="modalLogistica" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:none;align-items:center;justify-content:center">
+  <div style="background:#0d1b2a;border:1px solid rgba(0,212,255,0.3);border-radius:20px;padding:40px;max-width:600px;width:90%;position:relative;animation:fadeUp 0.4s ease">
+    <button onclick="fecharModal()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:#7aa8cc;font-size:1.4rem;cursor:pointer">✕</button>
+    <div style="color:#00d4ff;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px">// Projeto Pessoal · Analista Sênior de Dados</div>
+    <h2 style="font-family:'Orbitron',monospace;font-size:1.2rem;color:#e8f4ff;margin-bottom:20px">📊 Dashboard de Operações & Logística</h2>
+    <p style="color:#7aa8cc;font-size:0.875rem;line-height:1.8;margin-bottom:20px">Solução desenvolvida para análise histórica de KPIs logísticos com foco em tomada de decisão operacional — unindo identidade visual forte, experiência analítica fluida e narrativa clara de dados.</p>
+    <div style="margin-bottom:20px">
+      <div style="color:#00d4ff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">O que monitora</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="color:#7aa8cc;font-size:0.875rem">✅ 48.320 entregas realizadas</div>
+        <div style="color:#7aa8cc;font-size:0.875rem">✅ SLA de 91,4% no prazo</div>
+        <div style="color:#7aa8cc;font-size:0.875rem">✅ Performance de 5 rotas em tempo real</div>
+        <div style="color:#7aa8cc;font-size:0.875rem">✅ Custo e tendência histórica de entregas</div>
+      </div>
+    </div>
+    <div style="margin-bottom:24px">
+      <div style="color:#00d4ff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">Stack</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:#00d4ff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Python</span>
+        <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:#00d4ff;padding:4px 12px;border-radius:20px;font-size:0.75rem">SQL</span>
+        <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:#00d4ff;padding:4px 12px;border-radius:20px;font-size:0.75rem">AWS</span>
+        <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:#00d4ff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Power BI</span>
+        <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:#00d4ff;padding:4px 12px;border-radius:20px;font-size:0.75rem">PySpark</span>
+      </div>
+    </div>
+    <div style="margin-bottom:28px">
+      <div style="color:#00d4ff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">Resultado</div>
+      <p style="color:#7aa8cc;font-size:0.875rem;line-height:1.8">Painel corporativo com narrativa clara que permite acompanhamento em tempo real da performance logística e suporte direto à tomada de decisão estratégica.</p>
+    </div>
+    <a href="https://marcosfeitosa0408.github.io/logistics-operations-dashboard/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,#00d4ff,#0a84ff);color:#000;border-radius:30px;font-weight:700;font-size:0.875rem;text-decoration:none;transition:transform 0.2s">🚀 Ver Dashboard</a>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
