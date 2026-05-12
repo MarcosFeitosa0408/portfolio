@@ -141,10 +141,11 @@
           <span class="cat-arr">▼</span>
         </div>
         <div class="cat-submenu hidden" id="catSQL">
-          <button class="sub-btn" onclick="window.open('https://www.canva.com/design/DAG0kp2eqrQ/AoySo79LgkQsJWzDWPOEvA/view?utm_content=DAG0kp2eqrQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hde9167d639','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 1 — Portfólio SQL</button>
-          <button class="sub-btn" onclick="window.open('https://1drv.ms/p/c/585f0eae7ffe54ba/EZ2BipW3X7BHtEjzMiwJ3DkBOKHGUjGYif24wAD1hsJjww?e=puOxMV&nav=eyJzSWQiOjI1Nn0','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 2 — Top 10 SQL</button>
-          <button class="sub-btn" onclick="window.open('https://app.presentations.ai/view/jS2F3yjklH','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 3 — Explorando Dados</button>
-          <button class="sub-btn" onclick="window.open('https://1drv.ms/p/c/585f0eae7ffe54ba/ESZGEP7ubCJEmjOP2j9OFjMBTLOyS2F2pjwwt-slARbE7g?e=oHFAbS','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 4 — Análise Avançada</button>
+          <button class="sub-btn" onclick="abrirModalClinica()"><i class="fa-solid fa-hospital"></i>Projeto 1 — Clínica SQL Server</button>
+          <button class="sub-btn" onclick="window.open('https://www.canva.com/design/DAG0kp2eqrQ/AoySo79LgkQsJWzDWPOEvA/view?utm_content=DAG0kp2eqrQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hde9167d639','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 2 — Portfólio SQL</button>
+          <button class="sub-btn" onclick="window.open('https://1drv.ms/p/c/585f0eae7ffe54ba/EZ2BipW3X7BHtEjzMiwJ3DkBOKHGUjGYif24wAD1hsJjww?e=puOxMV&nav=eyJzSWQiOjI1Nn0','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 3 — Top 10 SQL</button>
+          <button class="sub-btn" onclick="window.open('https://app.presentations.ai/view/jS2F3yjklH','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 4 — Explorando Dados</button>
+          <button class="sub-btn" onclick="window.open('https://1drv.ms/p/c/585f0eae7ffe54ba/ESZGEP7ubCJEmjOP2j9OFjMBTLOyS2F2pjwwt-slARbE7g?e=oHFAbS','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 5 — Análise Avançada</button>
         </div>
       </div>
 
@@ -297,6 +298,51 @@
       <p style="color:#7aa8cc;font-size:0.875rem;line-height:1.8">Painel corporativo com narrativa clara que permite acompanhamento em tempo real da performance logística e suporte direto à tomada de decisão estratégica.</p>
     </div>
     <a href="https://marcosfeitosa0408.github.io/logistics-operations-dashboard/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,#00d4ff,#0a84ff);color:#000;border-radius:30px;font-weight:700;font-size:0.875rem;text-decoration:none;transition:transform 0.2s">🚀 Ver Dashboard</a>
+  </div>
+</div>
+  <!-- MODAL CLÍNICA SQL -->
+<div id="modalClinica" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;overflow-y:auto">
+  <div style="background:#0d1b2a;border:1px solid rgba(0,212,255,0.3);border-radius:20px;padding:40px;max-width:620px;width:90%;position:relative;margin:40px auto">
+    <button onclick="fecharModalClinica()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:#7aa8cc;font-size:1.4rem;cursor:pointer">✕</button>
+    <div style="color:#4f8ef7;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px">// Projeto Pessoal · T-SQL · SQL Server</div>
+    <h2 style="font-family:'Orbitron',monospace;font-size:1.1rem;color:#e8f4ff;margin-bottom:20px">🏥 Gestão Analítica de Clínicas Médicas</h2>
+    <p style="color:#7aa8cc;font-size:0.875rem;line-height:1.8;margin-bottom:20px">Banco de dados construído do zero com SQL Server — modelagem completa em 3FN com análises avançadas, stored procedures, views e auditoria com JSON.</p>
+
+    <div style="margin-bottom:20px">
+      <div style="color:#4f8ef7;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">🏗 Estrutura</div>
+      <div style="color:#7aa8cc;font-size:0.85rem;line-height:2">
+        ✅ 9 tabelas normalizadas (3FN)<br>
+        ✅ 5 queries analíticas com Window Functions<br>
+        ✅ 4 Stored Procedures parametrizadas<br>
+        ✅ 5 Views como camada de leitura para BI<br>
+        ✅ Índices compostos e Columnstore<br>
+        ✅ Triggers de auditoria com JSON
+      </div>
+    </div>
+
+    <div style="margin-bottom:20px">
+      <div style="color:#4f8ef7;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">📊 Análises</div>
+      <div style="color:#7aa8cc;font-size:0.85rem;line-height:2">
+        → Taxa de absenteísmo com média móvel 3 meses<br>
+        → Ranking de medicamentos por especialidade<br>
+        → Faturamento com crescimento YoY e YTD<br>
+        → Performance de médicos com PERCENT_RANK<br>
+        → Cohort analysis + pacientes em risco de churn
+      </div>
+    </div>
+
+    <div style="margin-bottom:24px">
+      <div style="color:#4f8ef7;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">Stack</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="background:rgba(79,142,247,0.08);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:4px 12px;border-radius:20px;font-size:0.75rem">SQL Server</span>
+        <span style="background:rgba(79,142,247,0.08);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:4px 12px;border-radius:20px;font-size:0.75rem">T-SQL</span>
+        <span style="background:rgba(79,142,247,0.08);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:4px 12px;border-radius:20px;font-size:0.75rem">Window Functions</span>
+        <span style="background:rgba(79,142,247,0.08);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:4px 12px;border-radius:20px;font-size:0.75rem">CTEs</span>
+        <span style="background:rgba(79,142,247,0.08);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:4px 12px;border-radius:20px;font-size:0.75rem">JSON</span>
+      </div>
+    </div>
+
+    <a href="https://github.com/MarcosFeitosa0408/clinica-sql-server" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,#4f8ef7,#0a84ff);color:#fff;border-radius:30px;font-weight:700;font-size:0.875rem;text-decoration:none">🔗 Ver no GitHub</a>
   </div>
 </div>
 <script src="script.js"></script>
