@@ -93,3 +93,16 @@ function fecharModal(){
 document.getElementById('modalLogistica').addEventListener('click',function(e){
   if(e.target===this) fecharModal();
 });
+function abrirModalClinica(){
+  const m = document.getElementById('modalClinica');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalClinica(){
+  const m = document.getElementById('modalClinica');
+  m.style.display='none';
+  document.body.style.overflow='auto';
+}
+document.getElementById('modalClinica').addEventListener('click',function(e){
+  if(e.target===this) fecharModalClinica();
+});
