@@ -99,26 +99,7 @@ document.getElementById('modalClinica').addEventListener('click',function(e){
 document.getElementById('modalEcommerce').addEventListener('click',function(e){
     if(e.target===this) fecharModal('modalEcommerce');
 });
-function abrirModalEcommerce(){
-    const m = document.getElementById('modalEcommerce');
-    m.style.display='flex';
-    document.body.style.overflow='hidden';
-}
-function fecharModalEcommerce(){
-    const m = document.getElementById('modalEcommerce');
-    m.style.display='none';
-    document.body.style.overflow='auto';
-}
-function abrirModalEcommerce(){
-    const m = document.getElementById('modalEcommerce');
-    m.style.display='flex';
-    document.body.style.overflow='hidden';
-}
-function fecharModalEcommerce(){
-    const m = document.getElementById('modalEcommerce');
-    m.style.display='none';
-    document.body.style.overflow='auto';
-}
+
 function abrirModalClinica(){
   const m = document.getElementById('modalClinica');
   m.style.display='flex';
