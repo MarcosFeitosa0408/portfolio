@@ -80,16 +80,21 @@ const secObs = new IntersectionObserver(entries=>{
   });
 },{rootMargin:'-35% 0px -55% 0px'});
 secs.forEach(s=>secObs.observe(s));
-function abrirModal(){
-  const m = document.getElementById('modalLogistica');
-  m.style.display='flex';
-  document.body.style.overflow='hidden';
+function abrirModal(id){
+    const m = document.getElementById(id);
+    m.style.display='flex';
+    document.body.style.overflow='hidden';
 }
-function fecharModal(){
-  const m = document.getElementById('modalLogistica');
-  m.style.display='none';
-  document.body.style.overflow='auto';
+
+function fecharModal(id){
+    const m = document.getElementById(id);
+    m.style.display='nenhum';
+    document.body.style.overflow='auto';
 }
+
+document.getElementById('modalLogistica').addEventListener('click',function(e){
+    if(e.alvo===esse) fecharModal('modalLogistica');
+});
 document.getElementById('modalLogistica').addEventListener('click',function(e){
   if(e.target===this) fecharModal();
 });
