@@ -85,31 +85,16 @@ function abrirModal(id){
     m.style.display='flex';
     document.body.style.overflow='hidden';
 }
-
 function fecharModal(id){
     const m = document.getElementById(id);
-  m.style.display='none';
+    m.style.display='none';
     document.body.style.overflow='auto';
 }
-
 document.getElementById('modalLogistica').addEventListener('click',function(e){
-   if(e.target===this) fecharModal('modalLogistica');
+    if(e.target===this) fecharModal('modalLogistica');
 });
-document.getElementById('modalLogistica').addEventListener('click',function(e){
-  if(e.target===this) fecharModal();
-});
-function abrirModalClinica(){
-  const m = document.getElementById('modalClinica');
-  m.style.display='flex';
-  document.body.style.overflow='hidden';
-}
-function fecharModalClinica(){
-  const m = document.getElementById('modalClinica');
-  m.style.display='none';
-  document.body.style.overflow='auto';
-}
 document.getElementById('modalClinica').addEventListener('click',function(e){
-  if(e.target===this) fecharModalClinica();
+    if(e.target===this) fecharModal('modalClinica');
 });
 document.getElementById('modalEcommerce').addEventListener('click',function(e){
     if(e.target===this) fecharModal('modalEcommerce');
