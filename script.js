@@ -88,12 +88,12 @@ function abrirModal(id){
 
 function fecharModal(id){
     const m = document.getElementById(id);
-    m.style.display='nenhum';
+  m.style.display='none';
     document.body.style.overflow='auto';
 }
 
 document.getElementById('modalLogistica').addEventListener('click',function(e){
-    if(e.alvo===esse) fecharModal('modalLogistica');
+   if(e.target===this) fecharModal('modalLogistica');
 });
 document.getElementById('modalLogistica').addEventListener('click',function(e){
   if(e.target===this) fecharModal();
