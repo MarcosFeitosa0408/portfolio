@@ -113,3 +113,16 @@ function fecharModalClinica(){
 document.getElementById('modalClinica').addEventListener('click',function(e){
   if(e.target===this) fecharModalClinica();
 });
+function abrirModalEcommerce(){
+  const m = document.getElementById('modalEcommerce');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalEcommerce(){
+  const m = document.getElementById('modalEcommerce');
+  m.style.display='none';
+  document.body.style.overflow='auto';
+}
+document.getElementById('modalEcommerce').addEventListener('click',function(e){
+  if(e.target===this) fecharModalEcommerce();
+});
