@@ -185,7 +185,8 @@
           <span class="cat-arr">▼</span>
         </div>
         <div class="cat-submenu hidden" id="catPy">
-          <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 1 — Previsão de Demanda</button>
+          <button class="sub-btn" onclick="abrirModal('modalEcommerce')"><i class="fa-brands fa-python"></i>Projeto 1 — E-commerce Analytics 🛒</button>
+          <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 2 — Previsão de Demanda</button>
         </div>
       </div>
 
@@ -346,5 +347,29 @@
   </div>
 </div>
 <script src="script.js"></script>
+<div id="modalEcommerce" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <button class="modal-close" onclick="fecharModal('modalEcommerce')">✕</button>
+    <p class="modal-tag">// Projeto Python · Analista de Dados</p>
+    <h2>🛒 Análise de E-commerce Brasileiro</h2>
+    <p>Projeto completo de análise de dados com mais de <strong>100.000 pedidos reais</strong> do e-commerce brasileiro — do dado bruto ao insight estratégico, usando Python profissional.</p>
+    <h4>🎯 Problema de Negócio</h4>
+    <p>Como identificar quais clientes estão sumindo antes de perdê-los? Como o atraso na entrega impacta a satisfação? Quais estados e categorias geram mais receita? Essas são as perguntas que este projeto responde.</p>
+    <h4>📊 O que você vai encontrar no GitHub</h4>
+    <p>✅ Segmentação RFM completa com 6 segmentos de negócio (Campeões, Em Risco, Hibernando...)<br>
+    ✅ KPIs automatizados: receita total, ticket médio, taxa de atraso<br>
+    ✅ Análise de impacto do atraso na satisfação do cliente<br>
+    ✅ Mapa de receita por estado brasileiro<br>
+    ✅ Testes automatizados com Pytest<br>
+    ✅ Código documentado em português — qualquer pessoa entende</p>
+    <h4>💡 Principais Resultados</h4>
+    <p>🏆 Clientes "Campeões" = 18% da base, mas 42% da receita<br>
+    📦 Atraso acima de 7 dias derruba nota de 4.3 para 1.9 estrelas<br>
+    🗺️ SP, RJ e MG concentram mais de 60% da receita total</p>
+    <h4>🛠️ Stack Utilizada</h4>
+    <p>Python · Pandas · NumPy · Matplotlib · Seaborn · Pytest · Jupyter</p>
+    <a href="https://github.com/MarcosFeitosa0408/ecommerce-analytics" target="_blank" class="modal-btn">🔗 Ver Projeto no GitHub</a>
+  </div>
+</div>
 </body>
 </html>
