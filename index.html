@@ -185,7 +185,7 @@
           <span class="cat-arr">▼</span>
         </div>
         <div class="cat-submenu hidden" id="catPy">
-         <button class="sub-btn" onclick="var m=document.getElementById('modalEcommerce');m.removeAttribute('style');m.style.display='flex';m.style.position='fixed';m.style.top='0';m.style.left='0';m.style.width='100%';m.style.height='100%';m.style.zIndex='99999';m.style.background='rgba(0,0,0,0.85)';m.style.alignItems='center';m.style.justifyContent='center';document.body.style.overflow='hidden';"><i class="fa-brands fa-python"></i>Projeto 1 — E-commerce Analytics 🛒</button>
+        <button class="sub-btn" onclick="document.getElementById('modalEcommerce').classList.add('ativo');document.body.style.overflow='hidden';"><i class="fa-brands fa-python"></i>Projeto 1 — E-commerce Analytics 🛒</button>
           <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 2 — Previsão de Demanda</button>
         </div>
       </div>
@@ -349,7 +349,7 @@
 <script src="script.js"></script>
 <button class="sub-btn" onclick="window.open('https://marcosfeitosa0408.github.io/ecommerce-analytics-page/','_blank')"><i class="fa-brands fa-python"></i>Projeto 1 — E-commerce Analytics 🛒</button>
   <div class="modal-box">
-   <button class="modal-close" onclick="document.getElementById('modalEcommerce').style.display='none';document.body.style.overflow='auto'">✕</button>
+  <button class="modal-close" onclick="document.getElementById('modalEcommerce').classList.remove('ativo');document.body.style.overflow='auto';">✕</button>
     <p class="modal-tag">// Projeto Python · Analista de Dados</p>
     <h2>🛒 Análise de E-commerce Brasileiro</h2>
     <p>Projeto completo de análise de dados com mais de <strong>100.000 pedidos reais</strong> do e-commerce brasileiro — do dado bruto ao insight estratégico, usando Python profissional.</p>
