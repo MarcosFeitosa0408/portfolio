@@ -109,3 +109,13 @@ function fecharModalEcommerce(){
     m.style.display='none';
     document.body.style.overflow='auto';
 }
+function abrirModalEcommerce(){
+    const m = document.getElementById('modalEcommerce');
+    m.style.display='flex';
+    document.body.style.overflow='hidden';
+}
+function fecharModalEcommerce(){
+    const m = document.getElementById('modalEcommerce');
+    m.style.display='none';
+    document.body.style.overflow='auto';
+}
