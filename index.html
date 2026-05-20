@@ -186,7 +186,8 @@
         </div>
         <div class="cat-submenu hidden" id="catPy">
          <button class="sub-btn" onclick="abrirModalEcommerce()"><i class="fa-brands fa-python"></i>Projeto 1 — E-commerce Analytics 🛒</button>
-          <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 2 — Previsão de Demanda</button>
+          <button class="sub-btn" onclick="abrirModalNexus()"><i class="fa-brands fa-python"></i>Projeto 2 — NexusFlow API 🚀</button>
+          <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 3 — Previsão de Demanda</button>
         </div>
       </div>
 
@@ -387,6 +388,57 @@
     </div>
 
     <a href="https://github.com/MarcosFeitosa0408/ecommerce-analytics" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,#9b6dff,#7b2fff);color:#fff;border-radius:30px;font-weight:700;font-size:0.875rem;text-decoration:none">🔗 Ver no GitHub</a>
+  </div>
+</div>
+  <!-- MODAL NEXUSFLOW -->
+<div id="modalNexus" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;overflow-y:auto">
+  <div style="background:#0d1b2a;border:1px solid rgba(155,109,255,0.3);border-radius:20px;padding:40px;max-width:620px;width:90%;position:relative;margin:40px auto">
+    <button onclick="fecharModalNexus()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:#7aa8cc;font-size:1.4rem;cursor:pointer">✕</button>
+    <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px">// Projeto Pessoal · Python · FastAPI · Backend</div>
+    <h2 style="font-family:'Orbitron',monospace;font-size:1.1rem;color:#e8f4ff;margin-bottom:20px">🚀 NexusFlow — Plataforma SaaS Empresarial</h2>
+    <p style="color:#7aa8cc;font-size:0.875rem;line-height:1.8;margin-bottom:20px">API REST enterprise construída do zero com arquitetura moderna — simulando desafios reais de empresas de tecnologia: multi-tenant, autenticação segura, processamento assíncrono e observabilidade completa.</p>
+
+    <div style="margin-bottom:20px">
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">🏗 Estrutura</div>
+      <div style="color:#7aa8cc;font-size:0.85rem;line-height:2">
+        ✅ Autenticação JWT com refresh token<br>
+        ✅ Arquitetura Async-First com FastAPI<br>
+        ✅ PostgreSQL + SQLAlchemy Assíncrono<br>
+        ✅ Sistema Multi-Tenant por organização<br>
+        ✅ Background Tasks com Celery + Redis<br>
+        ✅ Docker + CI/CD com GitHub Actions<br>
+        ✅ Testes automatizados com 80%+ de cobertura<br>
+        ✅ Logs estruturados com structlog (Datadog/Grafana ready)
+      </div>
+    </div>
+
+    <div style="margin-bottom:20px">
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">📊 Funcionalidades</div>
+      <div style="color:#7aa8cc;font-size:0.85rem;line-height:2">
+        → Gestão de usuários com 5 níveis de permissão<br>
+        → Dashboard com KPIs e métricas em tempo real<br>
+        → Sistema de notificações in-app<br>
+        → Upload seguro de arquivos com validação<br>
+        → Audit trail imutável (LGPD/GDPR ready)<br>
+        → Integração com APIs externas (retry automático)
+      </div>
+    </div>
+
+    <div style="margin-bottom:24px">
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">Stack</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Python 3.12</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">FastAPI</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">PostgreSQL</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Redis</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Celery</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Docker</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">JWT</span>
+        <span style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:0.75rem">Pytest</span>
+      </div>
+    </div>
+
+    <a href="https://github.com/MarcosFeitosa0408/nexusflow" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,#9b6dff,#7b2fff);color:#fff;border-radius:30px;font-weight:700;font-size:0.875rem;text-decoration:none">🔗 Ver no GitHub</a>
   </div>
 </div>
 <script src="script.js"></script>
