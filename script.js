@@ -126,3 +126,16 @@ function fecharModalEcommerce(){
 document.getElementById('modalEcommerce').addEventListener('click',function(e){
   if(e.target===this) fecharModalEcommerce();
 });
+function abrirModalNexus(){
+  const m = document.getElementById('modalNexus');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalNexus(){
+  const m = document.getElementById('modalNexus');
+  m.style.display='none';
+  document.body.style.overflow='auto';
+}
+document.getElementById('modalNexus').addEventListener('click',function(e){
+  if(e.target===this) fecharModalNexus();
+});
