@@ -167,31 +167,3 @@ function createFallingStar() {
 }
 
 setInterval(createFallingStar, 300);
-function createFallingStar() {
-
-    const star = document.createElement("div");
-
-    star.classList.add("star-fall");
-
-    const symbols = ["✦","✧","★","⋆"];
-
-    star.innerHTML =
-        symbols[Math.floor(Math.random() * symbols.length)];
-
-    star.style.left =
-        Math.random() * window.innerWidth + "px";
-
-    star.style.fontSize =
-        (Math.random() * 12 + 8) + "px";
-
-    star.style.animationDuration =
-        (Math.random() * 5 + 3) + "s";
-
-    document.body.appendChild(star);
-
-    setTimeout(() => {
-        star.remove();
-    }, 8000);
-}
-
-setInterval(createFallingStar, 300);
