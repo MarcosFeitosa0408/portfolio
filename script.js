@@ -139,3 +139,24 @@ function fecharModalNexus(){
 document.getElementById('modalNexus').addEventListener('click',function(e){
   if(e.target===this) fecharModalNexus();
 });
+
+.star-fall {
+    position: fixed;
+    top: -20px;
+    color: rgba(255,255,255,0.9);
+    pointer-events: none;
+    z-index: 1;
+    animation: falling linear forwards;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
