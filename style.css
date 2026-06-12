@@ -35,23 +35,11 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
   position:absolute;
   background:#fff;
   border-radius:50%;
-  animation:twinkle var(--d,3s) ease-in-out infinite alternate;
-}
-
-@keyframes twinkle{
-  from{
-    opacity:0.08;
-    transform:scale(1);
-  }
-
-  to{
-    opacity:0.9;
-    transform:scale(1.4);
-  }
 }
 
 .far{
    opacity:.25;
+
    animation:
       twinkle var(--d) ease-in-out infinite alternate,
       drift 25s linear infinite;
@@ -59,6 +47,7 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 
 .mid{
    opacity:.55;
+
    animation:
       twinkle var(--d) ease-in-out infinite alternate,
       drift 18s linear infinite;
@@ -66,8 +55,6 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 
 .near{
    opacity:.9;
-
-   box-shadow:0 0 8px rgba(255,255,255,.8);
 
    animation:
       twinkle var(--d) ease-in-out infinite alternate,
@@ -87,7 +74,7 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
   100%{
       transform:translate(0,0);
   }
-}
+
 
 
 .grid-bg{position:fixed;inset:0;pointer-events:none;z-index:0;
