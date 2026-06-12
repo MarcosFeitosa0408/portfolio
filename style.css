@@ -237,7 +237,31 @@ footer{position:relative;z-index:1;padding:64px 20px;text-align:center;border-to
   display: flex !important;
 }
 
-@keyframes falling {
+@keyframes twinkle{
+  from{
+    opacity:0.08;
+    transform:scale(1);
+  }
+
+  to{
+    opacity:0.9;
+    transform:scale(1.4);
+  }
+}@keyframes drift{
+
+  0%{
+      transform:translate(0,0);
+  }
+
+  50%{
+      transform:translate(8px,-12px);
+  }
+
+  100%{
+      transform:translate(0,0);
+  }
+}
+@keyframes falling{
 
     0%{
         transform:
