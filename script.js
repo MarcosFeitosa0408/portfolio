@@ -1,13 +1,35 @@
 (function(){
   const el = document.getElementById('stars');
   if(!el) return;
-  for(let i=0;i<180;i++){
+ for(let i=0;i<180;i++){
+
     const s = document.createElement('div');
-    s.className='star';
+
+    const layer = Math.random();
+
+    if(layer < 0.6){
+        s.className = 'star far';
+    }
+    else if(layer < 0.9){
+        s.className = 'star mid';
+    }
+    else{
+        s.className = 'star near';
+    }
+
     const sz = Math.random()*2.4+0.5;
-    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${(Math.random()*4+2).toFixed(1)}s;animation-delay:${(Math.random()*5).toFixed(1)}s;`;
+
+    s.style.cssText = `
+        width:${sz}px;
+        height:${sz}px;
+        left:${Math.random()*100}%;
+        top:${Math.random()*100}%;
+        --d:${(Math.random()*4+2).toFixed(1)}s;
+        animation-delay:${(Math.random()*5).toFixed(1)}s;
+    `;
+
     el.appendChild(s);
-  }
+}
 })();
 
 function toggleCat(header, id){
