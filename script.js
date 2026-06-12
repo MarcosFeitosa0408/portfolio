@@ -139,24 +139,31 @@ function fecharModalNexus(){
 document.getElementById('modalNexus').addEventListener('click',function(e){
   if(e.target===this) fecharModalNexus();
 });
+function createFallingStar() {
 
-.star-fall {
-    position: fixed;
-    top: -20px;
-    color: rgba(255,255,255,0.9);
-    pointer-events: none;
-    z-index: 1;
-    animation: falling linear forwards;
+    const star = document.createElement("div");
+
+    star.classList.add("star-fall");
+
+    const symbols = ["✦","✧","★","⋆"];
+
+    star.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    star.style.left =
+        Math.random() * window.innerWidth + "px";
+
+    star.style.fontSize =
+        (Math.random() * 12 + 8) + "px";
+
+    star.style.animationDuration =
+        (Math.random() * 5 + 3) + "s";
+
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+        star.remove();
+    }, 8000);
 }
 
-@keyframes falling {
-    0% {
-        transform: translateY(-20px);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(110vh);
-        opacity: 0;
-    }
-}
+setInterval(createFallingStar, 300);
