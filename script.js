@@ -166,4 +166,12 @@ function createFallingStar() {
     }, 8000);
 }
 
-setInterval(createFallingStar, 300);
+setInterval(() => {
+
+    if(Math.random() > 0.55){
+
+        createFallingStar();
+
+    }
+
+}, 300);
