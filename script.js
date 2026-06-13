@@ -100,73 +100,23 @@ document.getElementById('modalEcommerce').addEventListener('click',function(e){
     if(e.target===this) fecharModal('modalEcommerce');
 });
 
-function abrirModalClinica(){
-  const m = document.getElementById('modalClinica');
-  m.style.display='flex';
-  document.body.style.overflow='hidden';
-}
-function fecharModalClinica(){
-  const m = document.getElementById('modalClinica');
-  m.style.display='none';
-  document.body.style.overflow='auto';
-}
-document.getElementById('modalClinica').addEventListener('click',function(e){
-  if(e.target===this) fecharModalClinica();
-});
-function abrirModalEcommerce(){
-  const m = document.getElementById('modalEcommerce');
-  m.style.display='flex';
-  document.body.style.overflow='hidden';
-}
-function fecharModalEcommerce(){
-  const m = document.getElementById('modalEcommerce');
-  m.style.display='none';
-  document.body.style.overflow='auto';
-}
-document.getElementById('modalEcommerce').addEventListener('click',function(e){
-  if(e.target===this) fecharModalEcommerce();
-});
-function abrirModalNexus(){
-  const m = document.getElementById('modalNexus');
-  m.style.display='flex';
-  document.body.style.overflow='hidden';
-}
-function fecharModalNexus(){
-  const m = document.getElementById('modalNexus');
-  m.style.display='none';
-  document.body.style.overflow='auto';
-}
-document.getElementById('modalNexus').addEventListener('click',function(e){
-  if(e.target===this) fecharModalNexus();
-});
-function createFallingStar() {
+function abrirModal(id){
+  const modal = document.getElementById(id);
 
-    const star = document.createElement("div");
+  if(!modal) return;
 
-    star.classList.add("star-fall");
-
-    const symbols = ["✦","✧","⋆"];
-
-    star.innerHTML =
-        symbols[Math.floor(Math.random() * symbols.length)];
-
-    star.style.left =
-        Math.random() * window.innerWidth + "px";
-
-    star.style.fontSize =
-        (Math.random() * 12 + 8) + "px";
-
-    star.style.animationDuration =
-        (Math.random() * 5 + 3) + "s";
-
-    document.body.appendChild(star);
-
-    setTimeout(() => {
-        star.remove();
-    }, 8000);
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
 
-setInterval(createFallingStar, 300);
+function fecharModal(id){
+  const modal = document.getElementById(id);
+
+  if(!modal) return;
+
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
 function createFallingStar() {
 
     const star = document.createElement("div");
