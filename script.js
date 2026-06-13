@@ -138,7 +138,7 @@ function createFallingStar() {
 
     star.classList.add("star-fall");
 
-    const symbols = ["✦","✧","⋆"];
+    const symbols = ["✦"," • ","⋆"];
 
     star.innerHTML =
         symbols[Math.floor(Math.random() * symbols.length)];
@@ -150,7 +150,7 @@ function createFallingStar() {
         (Math.random() * 12 + 8) + "px";
 
     star.style.animationDuration =
-        (Math.random() * 5 + 3) + "s";
+        (Math.random() * 8 + 8) + "s";
 
     document.body.appendChild(star);
 
