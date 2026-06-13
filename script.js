@@ -100,22 +100,37 @@ document.getElementById('modalEcommerce').addEventListener('click',function(e){
     if(e.target===this) fecharModal('modalEcommerce');
 });
 
-function abrirModal(id){
-  const modal = document.getElementById(id);
-
-  if(!modal) return;
-
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+function abrirModalClinica(){
+  const m = document.getElementById('modalClinica');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalClinica(){
+  const m = document.getElementById('modalClinica');
+  m.style.display='none';
+  document.body.style.overflow='auto';
 }
 
-function fecharModal(id){
-  const modal = document.getElementById(id);
+function abrirModalEcommerce(){
+  const m = document.getElementById('modalEcommerce');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalEcommerce(){
+  const m = document.getElementById('modalEcommerce');
+  m.style.display='none';
+  document.body.style.overflow='auto';
+}
 
-  if(!modal) return;
-
-  modal.style.display = 'none';
-  document.body.style.overflow = 'auto';
+function abrirModalNexus(){
+  const m = document.getElementById('modalNexus');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function fecharModalNexus(){
+  const m = document.getElementById('modalNexus');
+  m.style.display='none';
+  document.body.style.overflow='auto';
 }
 function createFallingStar() {
 
