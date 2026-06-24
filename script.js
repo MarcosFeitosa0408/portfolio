@@ -132,6 +132,17 @@ function fecharModalNexus(){
   m.style.display='none';
   document.body.style.overflow='auto';
 }
+function abrirModalCustomer(){
+  const m = document.getElementById('modalCustomer');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+
+function fecharModalCustomer(){
+  const m = document.getElementById('modalCustomer');
+  m.style.display='none';
+  document.body.style.overflow='auto';
+}
 function createFallingStar() {
 
     const star = document.createElement("div");
