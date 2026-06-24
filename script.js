@@ -99,7 +99,9 @@ document.getElementById('modalClinica').addEventListener('click',function(e){
 document.getElementById('modalEcommerce').addEventListener('click',function(e){
     if(e.target===this) fecharModal('modalEcommerce');
 });
-
+document.getElementById('modalCustomer').addEventListener('click',function(e){
+    if(e.target===this) fecharModalCustomer();
+});
 function abrirModalClinica(){
   const m = document.getElementById('modalClinica');
   m.style.display='flex';
