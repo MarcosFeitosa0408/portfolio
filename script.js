@@ -173,3 +173,102 @@ function createFallingStar() {
 }
 
 setInterval(createFallingStar, 300);
+
+
+function abrirModalEDAP(){
+
+abrirModal(`
+<div class="modal-content-custom">
+
+<div class="modal-header-custom">
+
+<div class="mini-title">
+// PROJETO ENTERPRISE • PYTHON • DATA QUALITY
+</div>
+
+<h2>
+🚀 EDAP — Enterprise Data Analytics Platform
+</h2>
+
+<p>
+Plataforma Enterprise desenvolvida para validar, interpretar e medir a qualidade dos dados antes da utilização em Business Intelligence, Analytics e Inteligência Artificial.
+</p>
+
+<h4>📊 PRINCIPAIS FUNCIONALIDADES</h4>
+
+<ul>
+
+<li>✅ Validação automática da qualidade dos dados</li>
+
+<li>✅ Identificação de duplicidades, campos nulos e inconsistências</li>
+
+<li>✅ Indicadores executivos de Data Quality</li>
+
+<li>✅ Insights automáticos utilizando IA</li>
+
+<li>✅ Exportação de dados tratados</li>
+
+<li>✅ Preparação de datasets para BI e IA</li>
+
+</ul>
+
+<h4>📦 ARQUITETURA</h4>
+
+<ul>
+
+<li>→ Engenharia de Dados</li>
+
+<li>→ ETL</li>
+
+<li>→ Data Validation</li>
+
+<li>→ Data Cleaning</li>
+
+<li>→ Business Intelligence</li>
+
+<li>→ Analytics Foundation</li>
+
+<li>→ Inteligência Artificial</li>
+
+</ul>
+
+<div class="stack-title">
+STACK
+</div>
+
+<div class="stack-tags">
+
+<span>Python</span>
+
+<span>Pandas</span>
+
+<span>SQL</span>
+
+<span>Power BI</span>
+
+<span>Data Quality</span>
+
+<span>ETL</span>
+
+<span>IA</span>
+
+</div>
+
+<div class="modal-buttons">
+
+<a href="https://youtu.be/Qv00TktzBAg" target="_blank" class="btn-purple">
+🎥 Assistir Demonstração
+</a>
+
+<a href="https://lnkd.in/dCQy5EKw" target="_blank" class="btn-outline">
+💼 Ver publicação
+</a>
+
+</div>
+
+</div>
+
+</div>
+`);
+
+}
