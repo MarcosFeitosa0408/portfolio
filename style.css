@@ -504,3 +504,40 @@ footer{position:relative;z-index:1;padding:64px 20px;text-align:center;border-to
         opacity:0;
     }
 }
+
+/* =======================================================
+   MODAL EDAP
+======================================================= */
+
+.stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.stack span{
+    background:#282828;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+.btn-demo{
+    display:inline-block;
+    margin:8px;
+    padding:12px 18px;
+    background:#6d4cff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-demo:hover{
+    background:#7f61ff;
+    transform:translateY(-2px);
+}
