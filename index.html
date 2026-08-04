@@ -490,80 +490,124 @@
   </div>
 </div>
 
-  <!-- Modal EDAP -->
-<div id="modalEDAP" class="modal">
+ <!-- Modal EDAP -->
+<div id="modalEDAP" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;overflow-y:auto">
 
-<div class="modal-box">
+  <div style="background:#0d1b2a;border:1px solid rgba(155,109,255,0.3);border-radius:20px;padding:40px;max-width:620px;width:90%;position:relative;margin:40px auto">
 
-<span class="fechar" onclick="fecharModalEDAP()">&times;</span>
+    <button onclick="fecharModalEDAP()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:#7aa8cc;font-size:1.4rem;cursor:pointer">✕</button>
 
-<h2>🚀 EDAP — Enterprise Data Analytics Platform</h2>
+    <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px">
+      // Projeto Enterprise · Python · Data Quality
+    </div>
 
-<p>
+    <h2 style="font-family:'Orbitron',monospace;font-size:1.2rem;color:#e8f4ff;margin-bottom:20px">
+      🚀 EDAP — Enterprise Data Analytics Platform
+    </h2>
 
-A EDAP é uma plataforma Enterprise desenvolvida para validar, interpretar e medir a qualidade dos dados antes que eles sejam utilizados em Business Intelligence, Analytics e Inteligência Artificial.
+    <p style="color:#7aa8cc;font-size:0.9rem;line-height:1.8;margin-bottom:20px">
+      Plataforma Enterprise desenvolvida para validar, interpretar e medir a qualidade dos dados antes da utilização em Business Intelligence, Analytics e Inteligência Artificial.
+    </p>
 
-</p>
+    <div style="margin-bottom:20px">
 
-<h3>📊 Funcionalidades</h3>
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">
+        📊 Principais Funcionalidades
+      </div>
 
-<ul>
+      <div style="color:#7aa8cc;font-size:0.88rem;line-height:2">
 
-<li>✅ Validação automática da qualidade dos dados</li>
+        ✅ Validação automática da qualidade dos dados<br>
 
-<li>✅ Identificação de duplicidades</li>
+        ✅ Identificação de duplicidades e inconsistências<br>
 
-<li>✅ Campos nulos e inconsistências</li>
+        ✅ Indicadores executivos de Data Quality<br>
 
-<li>✅ Indicadores executivos de Data Quality</li>
+        ✅ Insights com Inteligência Artificial<br>
 
-<li>✅ Insights com Inteligência Artificial</li>
+        ✅ Exportação de dados tratados<br>
 
-<li>✅ Preparação de datasets para BI e IA</li>
+        ✅ Preparação de datasets para BI, Analytics e IA
 
-</ul>
+      </div>
 
-<h3>📦 Tecnologias</h3>
+    </div>
 
-<div class="stack">
+    <div style="margin-bottom:20px">
 
-<span>Python</span>
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">
+        📦 Arquitetura
+      </div>
 
-<span>Pandas</span>
+      <div style="color:#7aa8cc;font-size:0.88rem;line-height:2">
 
-<span>SQL</span>
+        → Engenharia de Dados<br>
 
-<span>Power BI</span>
+        → ETL<br>
 
-<span>ETL</span>
+        → Data Cleaning<br>
 
-<span>Data Quality</span>
+        → Data Validation<br>
 
-<span>IA</span>
+        → Data Quality<br>
 
-</div>
+        → Business Intelligence<br>
 
-<br>
+        → Analytics Foundation<br>
 
-<a
-class="btn-demo"
-target="_blank"
-href="https://youtu.be/Qv00TktzBAg">
+        → Inteligência Artificial
 
-🎥 Assistir Demonstração
+      </div>
 
-</a>
+    </div>
 
-<a
-class="btn-demo"
-target="_blank"
-href="https://lnkd.in/dCQy5EKw">
+    <div style="margin-bottom:24px">
 
-💼 Ver publicação
+      <div style="color:#9b6dff;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px">
+        Stack
+      </div>
 
-</a>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
 
-</div>
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">Python</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">Pandas</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">SQL</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">Power BI</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">ETL</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">Data Quality</span>
+
+        <span style="background:rgba(155,109,255,.08);border:1px solid rgba(155,109,255,.25);color:#9b6dff;padding:4px 12px;border-radius:20px;font-size:.75rem">IA</span>
+
+      </div>
+
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+
+      <a href="https://youtu.be/Qv00TktzBAg"
+         target="_blank"
+         style="display:inline-flex;align-items:center;padding:12px 24px;background:#9b6dff;color:white;border-radius:30px;text-decoration:none;font-weight:700">
+
+         🎥 Assistir Demonstração
+
+      </a>
+
+      <a href="https://lnkd.in/dCQy5EKw"
+         target="_blank"
+         style="display:inline-flex;align-items:center;padding:12px 24px;border:1px solid #9b6dff;color:#9b6dff;border-radius:30px;text-decoration:none;font-weight:700">
+
+         💼 Ver publicação
+
+      </a>
+
+    </div>
+
+  </div>
 
 </div>
 
