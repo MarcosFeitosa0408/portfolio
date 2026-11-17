@@ -11,6 +11,62 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    #modalERP {
+      position: fixed;
+      inset: 0;
+      margin: auto;
+      width: min(620px, calc(100% - 32px));
+      max-height: calc(100dvh - 32px);
+      overflow-y: auto;
+      padding: 48px 40px 40px;
+      background: #0d1b2a;
+      color: #7aa8cc;
+      border: 1px solid rgba(0,212,255,0.3);
+      border-radius: 20px;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    #modalERP::backdrop { background: rgba(0,0,0,0.85); }
+    #modalERP .erp-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      padding: 4px 8px;
+      color: #7aa8cc;
+      font-size: 1.4rem;
+    }
+    #modalERP h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.2rem;
+      color: #e8f4ff;
+      margin-bottom: 20px;
+    }
+    #modalERP .erp-label {
+      color: #00d4ff;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    #modalERP p, #modalERP ul { margin-bottom: 20px; }
+    #modalERP ul { list-style: disc; padding-left: 20px; }
+    #modalERP .erp-stack { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+    #modalERP .erp-stack span {
+      color: #00d4ff;
+      border: 1px solid rgba(0,212,255,0.25);
+      background: rgba(0,212,255,0.08);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.75rem;
+    }
+    #modalERP .btn-p { font-size: 0.875rem; letter-spacing: 0; }
+    #modalERP :focus-visible { outline: 2px solid #00d4ff; outline-offset: 4px; }
+    @media (max-width: 640px) {
+      #modalERP { padding: 48px 24px 28px; }
+      #modalERP .btn-p { width: 100%; max-width: none; justify-content: center; }
+    }
+  </style>
 </head>
 <body>
 
@@ -190,6 +246,7 @@
           <button class="sub-btn" onclick="window.open('https://gamma.app/docs/PREVISAO-DE-DEMANDA-LOGISTICA-ufhomlwxixqe3iv?mode=doc','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 3 — Previsão Logística</button>
           <button class="sub-btn" onclick="window.open('https://gamma.app/docs/Impulsionando-as-Vendas-Guia-Completo-para-o-Sucesso-plpmlg14j6p99bv?mode=doc','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 4 — Impulsionando Vendas</button>
           <button class="sub-btn" onclick="window.open('https://github.com/MarcosFeitosa0408/site-analista-dados/blob/main/Sua-empresa-pode-estar-perdendo-talentos-e-nem-sabe-o-porque_Turnover(1).pptx','_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>Projeto 5 — Excel + IA</button>
+          <button type="button" class="sub-btn" aria-haspopup="dialog" aria-controls="modalERP" onclick="document.getElementById('modalERP').showModal(); document.body.style.overflow='hidden'"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>Projeto 6 — ERP Business Platform</button>
         </div>
       </div>
 
@@ -622,5 +679,34 @@ A <strong>EDAP</strong> valida a qualidade dos dados por meio de regras e indica
 
 <script src="script.js"></script>
 
+<dialog id="modalERP" aria-labelledby="erp-title" aria-describedby="erp-description" onclose="document.body.style.overflow=''" onclick="if(event.target===this &amp;&amp; (event.clientX &lt; this.getBoundingClientRect().left || event.clientX &gt; this.getBoundingClientRect().right || event.clientY &lt; this.getBoundingClientRect().top || event.clientY &gt; this.getBoundingClientRect().bottom)) this.close()">
+  <form method="dialog">
+    <button type="submit" class="erp-close" aria-label="Fechar apresentação do ERP" autofocus>✕</button>
+  </form>
+  <div class="erp-label">// Projeto pessoal · Desenvolvido com apoio de IA</div>
+  <h2 id="erp-title">ERP Business Platform</h2>
+  <p id="erp-description">Da planilha ao dashboard. Plataforma de análise de vendas que importa arquivos CSV e Excel, valida os dados e transforma os registros válidos em indicadores para apoiar decisões de negócio.</p>
+
+  <h3 class="erp-label">O que a plataforma faz</h3>
+  <ul>
+    <li>Importação de planilhas com mapeamento das colunas.</li>
+    <li>Remoção de espaços nas extremidades dos textos e descarte de linhas vazias.</li>
+    <li>Validação de datas e números, com indicação dos motivos de rejeição.</li>
+    <li>Remoção opcional de linhas exatamente duplicadas.</li>
+    <li>Indicadores de receita, pedidos, ticket médio e desempenho por loja.</li>
+    <li>Resultado e margem disponíveis quando os custos estão completos.</li>
+  </ul>
+
+  <h3 class="erp-label">Tecnologias</h3>
+  <div class="erp-stack">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SheetJS</span><span>IndexedDB</span>
+  </div>
+
+  <h3 class="erp-label">Demonstração</h3>
+  <p>Na gravação, apresento o fluxo com 1.200 registros fictícios de vendas, do envio da planilha à análise dos indicadores. Os dados importados são processados e salvos localmente no navegador.</p>
+  <a class="btn-p" href="https://youtu.be/R5Rl8qU1rbY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Assistir à apresentação no YouTube</a>
+</dialog>
+
 </body>
 </html>
+
